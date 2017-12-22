@@ -11,14 +11,8 @@
 enum
 {
     UNIFORM_FROM,
-    UNIFORM_FROMFILTER1,
-    UNIFORM_FROMFILTER2,
-    UNIFORM_FROMFILTETYPE,
     UNIFORM_ALPHA,
     UNIFORM_TO,
-    UNIFORM_TOFILTER1,
-    UNIFORM_TOFILTER2,
-    UNIFORM_TOFILTERTYPE,
     UNIFORM_PROGRESS,
     UNIFORM_ROTATION_ANGLE,//旋转矩阵
     UNIFORM_COLOR_CONVERSION_MATRIX,// 色彩转换矩阵
@@ -133,12 +127,6 @@ enum
     unforms[UNIFORM_TYPE] = glGetUniformLocation(_program, "type");
     unforms[UNIFORM_ALPHA] = glGetUniformLocation(_program, "alpha");
     unforms[UNIFORM_PROGRESS] = glGetUniformLocation(_program, "progress");
-    unforms[UNIFORM_FROMFILTETYPE] = glGetUniformLocation(_program, "fromFilterType");
-    unforms[UNIFORM_FROMFILTER1] = glGetUniformLocation(_program, "fromFilter1");
-    unforms[UNIFORM_FROMFILTER2] = glGetUniformLocation(_program, "fromFilter2");
-    unforms[UNIFORM_TOFILTERTYPE] = glGetUniformLocation(_program, "toFilterType");
-    unforms[UNIFORM_TOFILTER1] = glGetUniformLocation(_program, "toFilter1");
-    unforms[UNIFORM_TOFILTER2] = glGetUniformLocation(_program, "toFilter2");
     unforms[UNIFORM_SQUARESIZE] = glGetUniformLocation(_program, "squareSizeFactor");
     // Release vertex and fragment shaders.
     if (vertShader) {
